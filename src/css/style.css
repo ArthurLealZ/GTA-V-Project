@@ -1,0 +1,384 @@
+body{
+    background-color: #282828;
+}
+
+.cabecalho{
+    height: 103px;
+    width: 1184px;
+    background-color: #0b0b0b;
+    position: fixed;
+    z-index: 2;
+}
+
+.menus-escolha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 80px;
+    border-bottom: 1px solid #282828;
+}
+
+.anuncio{
+    height: 55px;
+    background: rgb(94,118,164);
+    background: linear-gradient(90deg, rgba(94,118,164,1) 1%, rgba(114,95,176,1) 21%, rgba(172,75,167,1) 48%, rgba(166,37,161,1) 62%, rgba(200,148,40,1) 92%, rgba(200,145,40,1) 100%);
+    border: 1px solid white ;
+}
+
+.anuncio-escrito{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-family: 'gta';
+    color: white;
+    
+}
+
+.cabecalho .logo{
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu{
+    gap: 50px;
+    display: flex;
+}
+
+.cabecalho .menu li a{
+    font-weight: bolder;
+    font-size: 10px;
+    font-family: 'Chalet';
+}
+
+.letra-branca{
+    color: #e8e8e8; 
+}
+
+.menus-escolha .menu li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.imagem-main{
+    padding-top: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.informacoes{
+    padding-top: 100px;
+}
+
+.home{
+    display: flex;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0.85) rgba(0,0,0,.7) 35%, transparent 65% );
+}
+
+.home .informacoes{
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 150px 80px 80px 80px;
+    max-width: 780px;
+}
+
+.home .informacoes img{
+    max-width: 150px;
+}
+
+.home .informacoes .lista-de-jogos{
+    display: flex;
+    gap: 32px;
+    max-width: 100px;
+}
+
+.home .informacoes .titulo{
+    font-family: 'titulo-gta';
+    font-size: 45px;
+}
+
+.home .informacoes .texto{
+    font-family: 'Chalet';
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.btn-main, .btn-plataforma{
+    background-color: rgba(255,255, 255, .1);
+    color: white;
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: 'titulo-gta';
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 3px;
+    width: 50%;
+    font-size: 28px;
+    transition: all .4s ease-in;
+}
+
+.btn-plataforma{
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-selecionado:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.botoes{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn-header{
+    background-color: #0b0b0b;
+    color: #e8e8e8;;
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: 'titulo-gta';
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 11px;
+    width: 50%;
+    font-size: 10px;
+    transition: all .4s ease-in;
+}
+
+.bg-gta-historia{
+    position: absolute;
+}
+
+.imagens-gta-historia{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,auto);
+}
+
+.gta-personagens{
+    grid-area: 1 / 1 / span 4 / span 1;
+    max-width: 570px;
+    padding: 210px 0px 0px 50px;
+}
+
+.logo-modo-historia{
+    grid-area: 1 / 2 / span 1 / span 2;
+    max-width: 120px;
+    padding: 230px 0px 0px 20px;
+}
+
+.imagens-gta-historia h2{
+    grid-area: 2 / 2 / span 2 / span 2;
+    font-size: 48px;
+    font-family: 'titulo-gta';
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
+
+.apresentacao-um{
+    grid-area: 3 / 2 / span 3 / span 2;
+    font-family: 'Chalet';
+    line-height: 1.5;
+    font-size: 13px;
+    padding-bottom: 500px;
+    padding-left: 20px;
+}
+
+.apresentacao-dois{
+    grid-area: 4 / 2 / span 4 / span 2;
+    font-family: 'Chalet';
+    line-height: 1.5;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-top: 70px;
+}
+
+.bg-gta-online{
+    position: absolute;
+    top: 1400px;
+}
+
+.imagens-gta-online{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,auto);
+    bottom: 400px;
+}
+
+.personagens-online{
+    grid-area: 1 / 2 / span 4 / span 2;
+    max-width: 440px;
+    padding: 350px 0px 0px 0px;
+}
+
+.logo-online{
+    grid-area: 1 / 1 / span 1 / span 1;
+    max-width: 270px;
+    padding: 350px 0px 0px 170px;
+}
+
+.imagens-gta-online h2{
+    grid-area: 2 / 1 / span 2 / span 1;
+    font-size: 48px;
+    font-family: 'titulo-gta';
+    padding-bottom: 100px;
+    padding-left: 170px;
+    padding-top: 15px;
+}
+
+.apresentacao-online-um{
+    grid-area: 3 / 1 / span 3 / span 1;
+    font-family: 'Chalet';
+    line-height: 1.5;
+    font-size: 13px;
+    padding-bottom: 500px;
+    padding-left: 170px;
+}
+
+.apresentacao-online-dois{
+    grid-area: 4 / 1 / span 4 / span 1;
+    font-family: 'Chalet';
+    line-height: 1.5;
+    font-size: 13px;
+    padding-left: 170px;
+    padding-top: 15px;
+}
+
+.compre-ja .capa-do-jogo{
+    width: 370px;
+}
+
+.compre-ja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 2250px;
+    left: 210px;
+}
+
+.compre-ja .titulo{
+    font-family: 'titulo-gta';
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.compre-ja .cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    width: 100%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+}
+
+.compre-ja .informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    top: 1;
+}
+
+.compre-ja .informacoes h3{
+    font-family: 'titulo-gta';
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.compre-ja .informacoes p{
+    color: #e8e8e8;
+    font-family: 'Chalet';
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.compre-ja .informacoes .plataformas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.compre-ja .btn-plataforma .plataformas{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3s ease-in;
+    /* display: none;
+    opacity: 0;*/
+} 
+
+.compre-ja .btn-plataforma .plataformas.ativo{
+    display: flex;
+    opacity: 1;
+} 
+
+.compre-ja .btn-plataforma .plataformas li{
+    padding: 20px;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(1){
+    border: 1px solid #00439c;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(1):hover{
+    background-color:  #00439c;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(2){
+    border: 1px solid #387a26;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(2):hover{
+    background-color:  #387a26;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(3){
+    border: 1px solid #00439c;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(3):hover{
+    background-color:   #00439c;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(4){
+    border: 1px solid #387a26;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(4):hover{
+    background-color:   #387a26;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(5){
+    border: 1px solid #fcaf17;
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(5):hover{
+    background-color:  #fcaf17;
+}
