@@ -3,7 +3,7 @@
 ## Objetivo
 O projeto tem como objetivo utilizar as liguagens HTML, CSS 
 
-<img src="../src/images/Screenshot_1.png" alt="gif da tela inicial do projeto">
+<img src="./src/images/Screenshot_1.png" alt="gif da tela inicial do projeto">
 
 ## Tecnolofias utilizadas:
 - HTML
