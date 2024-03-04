@@ -3,7 +3,7 @@
 ## Objetivo
 O projeto tem como objetivo utilizar as liguagens HTML, CSS 
 
-[<img src="./src/imagens/GTA 5 animaçao.gif" alt="gif da tela inicial do projeto">](https://filipe2426.github.io/Landing-Page-DevQuest/)
+<img src="../src/images/Screenshot_1.png" alt="gif da tela inicial do projeto">
 
 ## Tecnolofias utilizadas:
 - HTML
