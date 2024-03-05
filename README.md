@@ -8,7 +8,6 @@ O projeto tem como objetivo utilizar as liguagens HTML, CSS
 ## Tecnolofias utilizadas:
 - HTML
 - CSS
-- JavaScript
 
 ## Conhecimentos adquiridos:
 - Finalidade e aplicablidade das linguagens listadas acima:
